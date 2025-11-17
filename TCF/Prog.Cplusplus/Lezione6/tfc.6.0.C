@@ -14,8 +14,9 @@ int main(){
 	vector<double> xmeans;
 	vector<double> all_data;
 
-	ifstream in_file("InterfPattern.txt");
 
+	ifstream in_file("InterfPattern.txt");
+	
 	while(in_file >> value) {
    	 all_data.push_back(value);
 	}
@@ -25,8 +26,8 @@ int main(){
 
 	int optimal_bins = 1 + 3.322 * log10(N); // Sturges rules for # of bins
 
-	TH1D *photons = new TH1D("photons","Photons Collector",300,-10, 10);
 
+	TH1D *photons = new TH1D("photons","Photons Collector",300,-10, 10);
 	ifstream in_file0;
 	in_file0.open("InterfPattern.txt", ios::in);
 
@@ -41,6 +42,10 @@ int main(){
 	can->SetGrid();
 	can->cd();
 	photons->Draw();
+
+	//Inizializza la classe in_file
+	in_file.clear(); 
+	in_file.seekg(0, ios::beg); 
 
 	//
 		TH1D *mean1 = new TH1D("mean1","Photons Collector",30, 1.5, 5);
