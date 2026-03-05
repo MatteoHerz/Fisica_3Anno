@@ -1,0 +1,52 @@
+\documentclass[a4paper,num-refs,strutturaTemplate]{style}
+\journal{strutturaTemplate}
+\usepackage{graphicx}
+\usepackage{siunitx}
+\usepackage[italian]{babel}
+
+\title{Esperienza: Effetto Hall}
+
+\author[1]{Matteo Herz}
+\author[1]{Federico Cesari}
+\author[1]{Annalisa Graglia}
+\author[1]{Pinco Pallo}
+
+\affil[1]{Gruppo D9}
+
+\begin{document}
+\begin{frontmatter}
+\maketitle
+\thispagestyle{empty}
+
+\end{frontmatter}
+\newpage
+
+
+
+\section*{Quadro teorico dell'esperienza}
+%
+\subsection{Muoni}
+L'esperimento si concentra sullo studio dei raggi cosmici secondari, in particolare i muoni (\(\mu\)), che costituiscono la quasi totalità della radiazione carica che raggiunge la superficie terrestre.
+\begin{itemize}
+      \item \textbf{Origine:} I raggi cosmici primari (protoni, particelle $\alpha$, nuclei) interagiscono con l'atmosfera creando sciami di particelle.
+      \item \textbf{Perché i muoni?:} Hanno una vita media relativamente lunga, non interagiscono nuclearmente e, essendo pesanti, perdono poca energia per interazione elettromagnetica, riuscendo a raggiungere il suolo.
+      \item \textbf{Proprietà dei muoni al livello del mare:} Flusso: Circa 180 $\text{eventi}/(m^2s)$, energia media: $\approx 4$GeV, distribuzione angolare: segue una legge \(\cos(2\theta)\).
+\end{itemize}
+%
+\subsection{Strumentazione e principio di misura}
+L'apparato utilizza scintillatori plastici accoppiati a fotomoltiplicatori (PMT).
+\begin{enumerate}
+      \item Il muone attraversa lo scintillatore e deposita energia $E_{\text{dep}}$,
+      \item Lo scintillatore emette fotoni,
+      \item Il fotomoltiplicatore (PMT) converte la luce in un segnale elettrico di tensione $V_{\text{out}} \propto  E_{\text{dep}}$,
+      \item L'elettronica (Discriminatori, Moduli di Coincidenza, Scaler) elabora i segnali per il conteggio.
+\end{enumerate}
+%
+%
+%
+\section{Caratterizzazione del Rilevatore (Plateau)}
+Prima delle misure fisiche, è necessario stabilire la tensione di lavoro ottimale dei fotomoltiplicatori (PMT). Si varia la tensione HV del fotomoltiplicatore e si misura il tasso di conteggio (rate). Una volta ottenuta la curva di plateau si sceglie il valore di tensione nella regione in cui il conteggio rimane stabile nonostante piccole variazioni di HV.
+%
+%
+%
+\end{document}

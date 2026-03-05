@@ -1,0 +1,11 @@
+PUBLIC Inheritance: 
+Si usa in genere quando l'oggetto che eredita è un stesso tipo dell'oggetto (Es: Cane eredita da Animale). In questo modo la classe ereditaria ha accesso sia agli elementi PROTECTED che PUBLIC della classe madre. Ciò che era protected nella classe madre non può comunque essere richiamato nel main tramite la classe derivata ma sarà comunque accessibile e richiamabile all'interno della classe derivata. Fondamentalmente ciò che era public rimane public, ciò che era protected rimane come tale e così anche per il private. 
+
+
+PROTECTED Inheritance:
+In questo modo la classe ereditaria ha accesso ai public member della classe madre ma ciò che originariamente era public diventa protected nella classe ereditaria, non permettendo quindi alla classe ereditaria di poter modificare tali membri (dal main). Ma a sua volta una classe di secondo livello, che erita a sua volta dalla prima classe derivata, avrà accesso al suo interno tali funzionalità. 
+
+
+PRIVATE Inheritance:
+Questa eridarietà è usata generalmente per poter accedere alle funzionalità della classe madre ma con la classe derivata che non è dello stesso tipo della classe madre e che dunque non può accedere dall'esterno ai membri della classe madre.
+Tutto ciò che era public/protected diventa private.
